@@ -1,5 +1,5 @@
 {
-    "name": "quill-image-uploader",
+    "name": "angular-quill-image-uploader",
     "version": "1.3.4",
     "repository": "https://github.com/straiforos/quill-image-uploader.git",
     "description": "A module for Quill rich text editor to allow images to be uploaded to a server instead of being base64 encoded",

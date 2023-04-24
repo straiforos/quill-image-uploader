@@ -1,3 +1,5 @@
+This repo was forked from: https://github.com/NoelOConnell/quill-image-uploader
+Renamed for npm publishing to be used by my organization.
 # Quill ImageHandler Module
 
 A module for Quill rich text editor to allow images to be uploaded to a server instead of being base64 encoded.
