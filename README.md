@@ -75,3 +75,24 @@ var quill = new Quill(editor, {
   }
 });
 ```
+## Angular v14 
+Angular 14 and 15 have breaking changes with css imports. 
+It is encouraged to use the angular.json to import the style min file and not the unminified file the JS used to import.
+
+If you are using Angular we recommend using NGX-Quill. It allows you to register the quill image uploader in the module import/declaration using forRoot.
+
+```javascript
+export const IMG_UPLOADER = 'modules/imageUploader';
+@NgModule({
+  imports: [
+    QuillModule.forRoot({
+      customModules: [
+        {
+          path: IMG_UPLOADER,
+          implementation: ImageUploader
+        }
+      ]
+    })
+]
+});
+```
